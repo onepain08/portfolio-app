@@ -1,0 +1,40 @@
+@import '../../variables';
+
+.nav{
+    max-width: 73.083rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(253, 253, 253);
+
+    .logo{
+        height: 3.625rem;
+
+        
+    }
+
+    ul{
+        display: flex;
+        justify-content: end;
+        align-content: center;
+        width: 40rem;
+        list-style: none;
+        
+        
+        a{
+            
+            color: $font-white;
+            text-decoration: none;
+
+            
+        }
+        a:not(:first-child){
+            margin-left: 3rem;
+        }
+        
+    }
+    h2{
+        color: $font-white;
+    }
+    
+}

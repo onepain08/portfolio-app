@@ -1,0 +1,42 @@
+.nav {
+  max-width: 73.083rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fdfdfd;
+}
+
+.nav .logo {
+  height: 3.625rem;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 40rem;
+  list-style: none;
+}
+
+.nav ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav ul a:not(:first-child) {
+  margin-left: 3rem;
+}
+
+.nav h2 {
+  color: #fff;
+}
+/*# sourceMappingURL=Nav.css.map */
