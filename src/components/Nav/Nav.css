@@ -7,11 +7,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #fdfdfd;
 }
 
 .nav .logo {
-  height: 3.625rem;
+  height: 3.7rem;
   background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -28,11 +27,19 @@
       align-content: center;
   width: 40rem;
   list-style: none;
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 .nav ul a {
   color: #fff;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav ul a:not(:first-child) {

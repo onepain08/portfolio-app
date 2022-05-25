@@ -5,11 +5,10 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    color: rgb(253, 253, 253);
     
 
     .logo{
-        height: 3.625rem;
+        height: 3.7rem;
         background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -22,12 +21,16 @@
         align-content: center;
         width: 40rem;
         list-style: none;
-        
+        font-size: 1.125rem;
+        font-weight: 500;
         
         a{
             
             color: $font-white;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            
 
             
         }
