@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.title-gradient {
+  background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +14,7 @@
 }
 
 body {
-  background: radial-gradient(circle at 21% 22%, #002853 1%, #040c18 100%);
+  background: radial-gradient(circle at 14% 16%, #002853 0%, #040c18 50%, #040c18 100%);
   background-repeat: no-repeat;
   padding: 4rem 6rem;
 }

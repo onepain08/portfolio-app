@@ -1,0 +1,30 @@
+.media-icon {
+  margin: 0 1rem;
+}
+
+.media-icon a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #565656;
+}
+
+.media-icon img {
+  max-width: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  margin-right: 1rem;
+}
+
+.media-icon:not(:last-child) {
+  margin-right: 3rem;
+}
+/*# sourceMappingURL=media-icon.css.map */

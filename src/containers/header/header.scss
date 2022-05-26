@@ -1,0 +1,45 @@
+@import '../../variables';
+
+.header{
+
+    .header-content{
+        display: flex;
+        justify-content: center;
+    
+        .header-content-text{
+            max-width: 50%;
+    
+            .header-content-title{
+                display:flex;
+                flex-direction: column;
+                padding: 4rem 0;
+                font-weight: 800;
+                font-size: 2.5rem;
+                line-height: 4.687rem;
+                letter-spacing: -0.3rem;
+                text-transform: capitalize;
+            }
+    
+            p{
+                color: $font-blue;
+                font-weight: 400;
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+                max-width: 90%;
+            }
+            
+        }
+    
+        .header-image{
+            max-width: 50%;
+        }
+    }
+
+    .header-media-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        flex-wrap: wrap;
+        margin: 5rem 0;
+    }
+}

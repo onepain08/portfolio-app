@@ -1,2 +1,10 @@
-$background-color:radial-gradient(circle at 21% 22%, rgba(0, 40, 83, 1) 1%, rgba(4, 12, 24, 1) 100%);
+$background-color:radial-gradient(circle at 14% 16%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 50%, rgba(4, 12, 24, 1) 100%);
 $font-white: #fff;
+$font-blue: #81AFDD;
+
+.title-gradient{
+        background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+}
+
