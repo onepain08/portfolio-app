@@ -1,1 +1,5 @@
-/* No CSS *//*# sourceMappingURL=about.css.map */
+.about {
+  background: radial-gradient(circle at 0% 0%, #1b78de 0%, #052c55 14%, #082e58 67%, #1b78de 100%);
+  padding: 6rem 4rem;
+}
+/*# sourceMappingURL=about.css.map */
