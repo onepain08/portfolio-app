@@ -1,7 +1,7 @@
 @import '../../variables';
 
 .nav{
-    max-width: 73.083rem;
+    max-width: 98rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,10 @@
         background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        
+    }
+
+    .toggle-menu{
+        display: none;
     }
 
     ul{
@@ -30,17 +33,74 @@
             text-decoration: none;
             display: flex;
             align-items: center;
-            
+            width: min-content;
+            margin-left: 3rem;
 
             
         }
-        a:not(:first-child){
-            margin-left: 3rem;
-        }
+        // a:not(:first-child){
+        //     margin-left: 3rem;
+        // }
         
     }
     h2{
         color: $font-white;
     }
     
+}
+
+
+@media(max-width: 1240px){
+    .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .logo{
+            margin: 1rem 2rem;
+        }
+        
+        .toggle-menu-btn{
+            display: block;
+            width: 2rem;
+            aspect-ratio: 1;
+            z-index: 10;
+            position:absolute;
+            right: 2rem;
+            top: 2rem;
+            cursor: pointer;
+        }
+        .menu-open{
+            height: 100vh;
+        }
+        .menu-closed{
+            height: 0;
+            display: none;
+        }
+        ul{
+            flex-direction: column;
+            width: 60%;
+            padding: 5rem 1rem;
+            justify-content: start;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(1rem);
+            
+            
+            a{
+                margin: auto;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                
+            }
+            
+            // a:first-child{
+            //     // margin: 1rem 3rem;
+            // }
+            
+
+        }
+    }
 }
