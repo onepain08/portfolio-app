@@ -26,4 +26,10 @@ body {
 .section-margin {
   margin: 4rem 6rem;
 }
+
+@media (max-width: 1240px) {
+  body {
+    padding: 4rem 1rem;
+  }
+}
 /*# sourceMappingURL=App.css.map */

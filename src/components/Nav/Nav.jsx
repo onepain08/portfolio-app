@@ -1,6 +1,6 @@
 import React from "react";
 import './Nav.css';
-import toggleHamburger from 'react-icons'
+import {Button} from '../index'
 
 function Nav(){
     
@@ -16,7 +16,8 @@ function Nav(){
                 <h2>Ariel</h2>
                 <h2>Tolwinski</h2>
             </div>
-                <button className="toggle-menu-btn" onClick={toggleMenu}>M</button>
+                {/* <button className="toggle-menu-btn" onClick={toggleMenu}>M</button> */}
+                <Button className="toggle-menu-btn" onClick={toggleMenu} />
             <ul className={menuState ? 'menu-open' : 'menu-closed'}>
                 <a href="#home"><li>Home</li></a>
                 <a href="#about"><li>About</li></a>

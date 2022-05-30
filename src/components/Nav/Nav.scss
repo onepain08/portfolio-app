@@ -14,18 +14,19 @@
         background-clip: text;
     }
 
-    .toggle-menu{
+    .toggle-menu-btn{
         display: none;
     }
 
     ul{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-content: center;
         width: 40rem;
         list-style: none;
         font-size: 1.125rem;
         font-weight: 500;
+        overflow: hidden;
         
         a{
             
@@ -73,34 +74,69 @@
             top: 2rem;
             cursor: pointer;
         }
-        .menu-open{
-            height: 100vh;
-        }
-        .menu-closed{
-            height: 0;
-            display: none;
-        }
+        
+        
         ul{
             flex-direction: column;
             width: 60%;
             padding: 5rem 1rem;
             justify-content: start;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(1rem);
+            background: rgba(0, 0, 0, 0.722);
             
+            @supports(backdrop-filter: blur(1rem)){
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(1rem);
+            }
             
             a{
                 margin: auto;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
-                
             }
-            
-            // a:first-child{
-            //     // margin: 1rem 3rem;
-            // }
-            
 
         }
+        
+        @keyframes fadein {
+            0%   {opacity: 0;}
+            25%  {opacity: 0;}
+            50%  {opacity: 0;}
+            75%  {opacity: 0.6;}
+            85%  {opacity: 0.8;}
+            100% {opacity: 1;}
+          }
+        @keyframes fadeout {
+            0%   {opacity: 1;}
+            25%  {opacity: 0.8;}
+            50%  {opacity: 0.6;}
+            75%  {opacity: 0;}
+            85%  {opacity: 0;}
+            100% {opacity: 0;}
+          }
+        .menu-open{
+            height: 100vh;
+            transition: all 400ms ease-in-out;
+
+            a{
+                animation-name: fadein;
+                animation-duration: 600ms;
+                animation-delay: 0s;
+            }
+        }
+        .menu-closed{
+            a{
+                animation-name: fadeout;
+                animation-duration: 600ms;
+                animation-delay: 0ms;
+            }
+            height: 0vh;
+            width: 0;
+            padding: 0;
+            transition: all 400ms ease-in-out;
+            
+        }
+
+        
+        
     }
 }
+
