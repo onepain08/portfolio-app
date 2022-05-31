@@ -85,8 +85,8 @@
                     font-weight: 400;
                     font-size: 1rem;
                     line-height: 1.2rem;
-                    max-width: 90%;
-                    text-align: center;
+                    max-width: 30rem;
+                    text-align: left;
                     margin: auto;
                 }
             }
@@ -95,6 +95,29 @@
                 max-width: 100%;
                 max-height: 27rem;
                 aspect-ratio: 1;
+            }
+        }
+
+        .header-media-section{
+            padding: 1rem 0;
+            margin-bottom: 3rem;
+
+            .media-icon{
+                margin-bottom: 3rem;
+                h2{
+                    font-weight: 800;
+                    font-size: 0.7rem;
+                    color: rgb(86, 86, 86);
+                    line-height: 1rem;
+                }
+                
+                img{
+                    max-width: 1rem;
+                    margin-right: 0.3rem;
+                }
+            }
+            .media-icon:not(:last-child){
+                margin-right: 1rem;
             }
         }
     }

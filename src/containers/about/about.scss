@@ -5,4 +5,35 @@
     padding: 6rem 4rem;
     max-width: 98rem;
     margin: auto;
+
+    .about-topic-horizontal{
+        display: flex;
+        margin-bottom: 6rem;
+
+        .topic{
+            min-width: fit-content;
+            padding-right: 4rem;
+        }
+        p{
+            padding: 2rem 4rem;
+        }
+    }
+
+    .about-topic-vertical{
+        display: flex;
+        justify-content: space-between;
+
+        .about-topic-vertical-par{
+            display: flex;
+            flex-direction: column;
+
+            .topic{
+                margin-bottom: 3rem;
+            }
+        }
+
+        .about-topic-vertical-par:not(:last-child){
+            margin-right: 3rem;
+        }
+    }
 }

@@ -6,9 +6,12 @@
         display: flex;
         align-items: center;
         text-decoration: none;
-        font-weight: 500;
-        font-size: 1rem;
-        color: rgb(86, 86, 86);
+        h2{
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: rgb(86, 86, 86);
+            line-height: 2rem;
+        }
         
         
     }
@@ -17,7 +20,7 @@
         max-width: 2rem;
         object-fit: contain;
         object-position: center;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
     }
 }
 .media-icon:not(:last-child){

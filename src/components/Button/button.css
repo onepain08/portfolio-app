@@ -8,5 +8,17 @@
   background: #FF4820;
   border-radius: 2px;
   border: none;
+  padding: 0.3rem;
+}
+
+.primary-btn .bar {
+  width: 100%;
+  height: 0.3rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.btn-margin-bot {
+  margin-bottom: 0.25rem;
 }
 /*# sourceMappingURL=button.css.map */

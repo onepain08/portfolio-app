@@ -22,6 +22,10 @@
   background-clip: text;
 }
 
+.nav .logo h2 {
+  line-height: 1.8rem;
+}
+
 .nav .toggle-menu-btn {
   display: none;
 }
