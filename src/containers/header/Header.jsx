@@ -3,7 +3,7 @@ import './header.css';
 import heroImage from '../../assets/hero-image.png'
 
 //Components imports
-import { MediaIcon,Nav } from '../../components/index';
+import { MediaIcon, } from '../../components/index';
 
 //Data imports
 import mediaIconsData from './mediaIconsData'
@@ -22,7 +22,7 @@ const Header = () => {
 
 
   return (
-    <div className='header'>
+    <div className='header' id='home'>
       <div className='header-content'>
         <div className='header-content-text'>
           <div className='header-content-title title-gradient'>
@@ -34,7 +34,7 @@ const Header = () => {
         </div>
 
         <div className='header-image'>
-          <img src={heroImage} alt='hero-image'></img>
+          <img src={heroImage} alt='hero'></img>
         </div>
       </div>
       <div className='header-media-section'>

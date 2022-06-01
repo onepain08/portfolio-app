@@ -1,4 +1,4 @@
-
+@import '../../variables';
 
 .about{
     background:radial-gradient(circle at 0% 0%, rgba(27, 120, 222, 1) 0%, rgb(5, 44, 85) 14%, rgb(8, 46, 88) 67%, rgba(27, 120, 222, 1) 100%);
@@ -17,6 +17,7 @@
         p{
             padding: 2rem 4rem;
         }
+        
     }
 
     .about-topic-vertical{
@@ -30,10 +31,77 @@
             .topic{
                 margin-bottom: 3rem;
             }
+            .about-topic-vertical-icons{
+                
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+
+                .media-icon{
+
+                    margin: 1rem 1rem;
+
+                    img{
+                        max-width: 3rem;
+                    }
+                    a{
+                        display: flex;
+                        flex-direction: column;
+                        h2{
+                            color: $font-blue;
+                        }
+                    }
+                }
+            }
         }
 
         .about-topic-vertical-par:not(:last-child){
             margin-right: 3rem;
+        }
+    }
+}
+
+@media(max-width: 1240px){
+ 
+    .about{
+        background:radial-gradient(circle at 0% 0%, rgba(27, 120, 222, 1) 0%, rgb(5, 44, 85) 14%, rgb(8, 46, 88) 67%, rgba(27, 120, 222, 1) 100%);
+        padding: 6rem 1rem;
+        max-width: 50rem;
+        margin: auto;
+    
+        .about-topic-horizontal{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3rem;
+    
+            .topic{
+                min-width: fit-content;
+            }
+            p{
+                padding: 2rem 1rem;
+            }
+        }
+    
+        .about-topic-vertical{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            .about-topic-vertical-par{
+                display: flex;
+                flex-direction: column;
+    
+                .topic{
+                    margin-bottom: 0rem;
+                }
+                p{
+                    padding: 2rem 1rem;
+                }
+            }
+    
+            .about-topic-vertical-par:not(:last-child){
+                margin-bottom: 3rem;
+            }
         }
     }
 }
