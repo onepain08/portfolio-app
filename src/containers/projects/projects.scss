@@ -1,0 +1,24 @@
+@import '../../variables';
+
+.projects{
+
+    background: $background-color;
+    max-width: 98rem;
+    margin: auto;
+    
+
+    .projects-title{
+        display:flex;
+        flex-direction: column;
+        padding: 4rem 0;
+        font-weight: 800;
+        font-size: 2.5rem;
+        line-height: 4.687rem;
+        letter-spacing: -0.3rem;
+        text-transform: capitalize;
+    }
+
+    .projects-projects-cards{
+        display: flex;
+    }
+}

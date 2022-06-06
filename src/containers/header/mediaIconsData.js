@@ -1,4 +1,4 @@
-import {twitter, github, linkedin} from '../../assets/index'
+import {twitter, githubColor, linkedin} from '../../assets/index'
 
 const mediaIcons =[
     {
@@ -15,7 +15,7 @@ const mediaIcons =[
     },
     {
         id: 'github-icon',
-        icon: github,
+        icon: githubColor,
         brand: "GitHub",
         link: 'https://github.com/onepain08'
     },

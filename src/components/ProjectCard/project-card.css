@@ -1,0 +1,37 @@
+.project-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  aspect-ratio: 1;
+  background-color: red;
+}
+
+.project-card img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.project-card .project-card-hover-content .project-card-hover-content-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project-card .project-card-hover-content .project-card-hover-content-btns img {
+  width: 3rem;
+}
+
+.project-card .project-card-hover-content .project-card-hover-content-btns button {
+  height: 2rem;
+  border: none;
+}
+/*# sourceMappingURL=project-card.css.map */

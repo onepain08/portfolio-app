@@ -68,7 +68,8 @@
 }
 
 .about .about-topic-vertical .about-topic-vertical-par .about-topic-vertical-icons .media-icon img {
-  max-width: 3rem;
+  width: 3rem;
+  aspect-ratio: 1;
 }
 
 .about .about-topic-vertical .about-topic-vertical-par .about-topic-vertical-icons .media-icon a {
@@ -83,6 +84,7 @@
 
 .about .about-topic-vertical .about-topic-vertical-par .about-topic-vertical-icons .media-icon a h2 {
   color: #81AFDD;
+  font-size: 1.2rem;
 }
 
 .about .about-topic-vertical .about-topic-vertical-par:not(:last-child) {

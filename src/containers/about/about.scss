@@ -6,6 +6,7 @@
     max-width: 98rem;
     margin: auto;
 
+
     .about-topic-horizontal{
         display: flex;
         margin-bottom: 6rem;
@@ -37,18 +38,22 @@
                 justify-content: flex-start;
                 flex-wrap: wrap;
 
+                
                 .media-icon{
 
                     margin: 1rem 1rem;
-
+                    
                     img{
-                        max-width: 3rem;
+                        width: 3rem;
+                        aspect-ratio: 1;
+                        
                     }
                     a{
                         display: flex;
                         flex-direction: column;
                         h2{
                             color: $font-blue;
+                            font-size: 1.2rem;
                         }
                     }
                 }
