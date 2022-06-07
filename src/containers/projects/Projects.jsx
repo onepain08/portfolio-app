@@ -3,16 +3,29 @@ import './projects.css';
 
 import {ProjectCard} from '../../components/index'
 
+import projectCardsData from './projectCardsData'
+
 const Projects = () => {
+
+const projectCards = projectCardsData.map(card =>{
+  return(
+    <ProjectCard 
+      key={card.id}
+      id={card.id}
+      image={card.image}
+      title={card.title}
+      description={card.description}
+      link={card.link}
+    />
+  )
+})
+
+
   return (
     <div className='projects'>
         <h1 className='title-gradient projects-title'>Projects</h1>
       <div className='projects-projects-cards'>
-        <ProjectCard title='Project placeholder' description='asdasd asd asd asd asdasdas aasdasd' />
-        <ProjectCard title='Project placeholder' description='asdasd asd asd asd asdasdas aasdasd' />
-        <ProjectCard title='Project placeholder' description='asdasd asd asd asd asdasdas aasdasd' />
-        <ProjectCard title='Project placeholder' description='asdasd asd asd asd asdasdas aasdasd' />
-        <ProjectCard title='Project placeholder' description='asdasd asd asd asd asdasdas aasdasd' />
+        {projectCards}
       </div>
     </div>
   )

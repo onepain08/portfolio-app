@@ -1,6 +1,5 @@
 import React from 'react'
 import './project-card.css'
-import hero from '../../assets/hero-image.png'
 
 import {github} from '../../assets/index'
 
@@ -12,12 +11,12 @@ const ProjectCard = (props) => {
 
   return (
     <div className='project-card' onMouseEnter={()=>{setHover(true)}} onMouseLeave={()=>{setHover(false)}}>
-        {!hover && <img src={hero}></img>}
+        {!hover && <img src={props.image} alt={props.id}></img>}
         {hover &&<div className='project-card-hover-content'>
             <h2>{props.title}</h2>
             <p>{props.description}</p>
             <div className='project-card-hover-content-btns'>
-                <a href='#'><img src={github} alt='github'></img></a>
+                <a href={props.link} target='_blank' rel="noreferrer"><img src={github} alt='github'></img></a>
                 <button>View More</button>
             </div>
         </div>}
