@@ -16,6 +16,7 @@ const projectCards = projectCardsData.map(card =>{
       title={card.title}
       description={card.description}
       link={card.link}
+      more={card.more}
     />
   )
 })

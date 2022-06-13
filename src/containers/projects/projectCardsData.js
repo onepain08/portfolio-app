@@ -7,6 +7,7 @@ const projectCardsData = [
     title:'rating card',
     description:'rating card component made with react',
     link: 'https://github.com/onepain08/react-rating-component',
+    more: 'https://onepain08.github.io/react-rating-component/',
     },
     
 ]

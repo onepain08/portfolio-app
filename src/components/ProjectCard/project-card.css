@@ -13,8 +13,8 @@
 }
 
 .project-card img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
      object-position: center;
   max-width: 100%;
